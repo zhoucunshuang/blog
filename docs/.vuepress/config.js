@@ -8,9 +8,10 @@ module.exports = {
   port: '8888', // 指定 dev server 的端口
   // dest: '.vuepress/dist', // 指定vuepress build 的目录
   // ga: 'UA-109340118-1', // 提供一个 Google Analytics ID 来使 GA 生效。
-  title: 'Paradise VuePress',
+  base:'/blog/',
+  title: 'blog',
   referrer: 'no-referrer',
-  description: 'Paradise Blog By VuePress',
+  description: 'blog',
   head: [
     // 增加一个自定义的favicon
     ['link', { 'rel': 'icon', 'href': '/image/1.ico' }]
@@ -18,7 +19,7 @@ module.exports = {
   themeConfig: {
     nav: [
       {
-        text: 'Paradise',
+        text: 'my',
         link: '/'
       },
       {
@@ -27,7 +28,7 @@ module.exports = {
       },
       {
         text: '生活',
-        link: '/life/'
+        link: '/my-blog/FirstBlog.md'
       },
       {
         text: 'Tools',
